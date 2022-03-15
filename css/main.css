@@ -1,0 +1,187 @@
+/*mapas*/
+/*extends*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+.grupoDos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+
+/*mixins*/
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #b6fdb4;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 6; }
+
+.navbar {
+  margin-right: 20px; }
+
+ul li {
+  display: inline-block;
+  margin-left: 20px; }
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f0415e; }
+
+.logo {
+  width: 130%;
+  height: 100px;
+  margin-left: 10px; }
+
+.contenedor {
+  text-align: center;
+  margin: 50px;
+  padding: 30px;
+  border: solid 1px #99A799;
+  border-radius: 4px; }
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+p {
+  font-size: 20px;
+  margin-bottom: 15px; }
+
+#parrafo {
+  margin: 10;
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 18px; }
+
+.carousel {
+  width: 92%; }
+
+.imagenBody {
+  margin-top: 10px;
+  width: 100%; }
+  .imagenBody:hover {
+    filter: grayscale(100%);
+    z-index: 5; }
+
+.imagenGaleria {
+  width: 100%;
+  height: 250px; }
+  .imagenGaleria:hover {
+    filter: grayscale(100%);
+    z-index: 5; }
+
+.gridPadre {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: "imagenUno imagenDos imagenTres" "imagenCuatro imagenCinco imagenSeis"; }
+
+.imagenUno {
+  grid-area: imagenUno; }
+
+.imagenDos {
+  grid-area: imagenDos; }
+
+.imagenTres {
+  grid-area: imagenTres; }
+
+.imagenCuatro {
+  grid-area: imagenCuatro; }
+
+.imagenCinco {
+  grid-area: imagenCinco; }
+
+.imagenSeis {
+  grid-area: imagenSeis; }
+
+.campo {
+  display: block;
+  width: 50%;
+  padding: 10px;
+  margin: 10px auto; }
+
+.boton {
+  color: black;
+  background-color: #D3E4CD;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.tablaPrecios {
+  margin-left: auto;
+  margin-right: auto; }
+
+.piePagina {
+  width: 100%;
+  background-color: #b6fdb4; }
+
+.grupoDos {
+  background-color: #b6fdb4;
+  padding: 15px 10px;
+  text-align: center;
+  color: #000000; }
+
+.grupoUno {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px; }
+
+.box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+img {
+  width: 250px; }
+
+h3 {
+  color: #000000;
+  margin-bottom: 25px;
+  font-size: 20px; }
+
+p {
+  color: #000000;
+  margin-bottom: 10px; }
+
+.redSocial a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #D3E4CD;
+  margin-right: 10px;
+  background-color: #3ee0cf;
+  text-align: center;
+  transition: all 300ms ease; }
+  .redSocial a:hover {
+    background-color: #00ffff; }
+
+@media only screen and (max-width: 599px) {
+  .grupoUno {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px; } }
+
+.botonWhatsApp img {
+  width: 70px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px; }

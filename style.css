@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+   
+
+}
+
+header {
+    background-color: rgb(182, 253, 180);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 6;
+}
+
+.navbar {
+    margin-right: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(240, 65, 94)
+}
+
+.logo {
+    width: 130%;
+    height: 100px;
+    margin-left: 10px;
+}
+
+
+.contenedor {
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+}
+.contenedor h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contenedor p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.carousel{      
+    width: 92%;
+
+}
+
+.imagenBody {
+    margin-top: 10px;
+    width: 100%;
+    
+   
+}
+
+.imagenBody:hover {
+    filter: grayscale(100%);
+    z-index: 5;
+}
+#parrafo{
+    margin: 10;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+    
+/*SECCION PRODUCTOS DESTACADOS */
+
+.imagenGaleria {
+    width: 100%;
+    height: 250px;
+}
+
+.imagenGaleria:hover {
+    filter: grayscale(100%);
+    z-index: 5;
+}
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "imagenUno imagenDos imagenTres"
+    "imagenCuatro imagenCinco imagenSeis";
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+
+.imagenCinco {
+    grid-area: imagenCinco;
+}
+
+.imagenSeis {
+    grid-area: imagenSeis;
+}
+
+/* SECCION CONTACTO */
+
+.campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.boton {
+    color: black;
+    background-color: #D3E4CD;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tablaPrecios{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+/* SECCION FOOTER */
+        
+/* BOTON DE WHATSAPP */
+
+.botonWhatsApp img {
+    width: 70px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+/*VISTA MOVIL */
+@media only screen and (max-width:599px) {
+    
+/* .imagenEncabezado { display: none;} */
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "imagenUno"
+    "imagenDos"
+    "imagenTres"
+    "imagenCuatro"
+    "imagenCinco"
+    "imagenSeis"
+    ;
+}
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width:600px) and (max-width:1023px) {
+    
+/* .imagenEncabezado {display: none;} */
+
+.gridPadre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "imagenUno imagenDos"
+    "imagenTres imagenCuatro"
+    "imagenCinco imagenSeis"
+    ;
+}
+
+
+
+}
+
